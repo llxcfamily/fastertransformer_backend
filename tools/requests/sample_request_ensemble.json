@@ -1,0 +1,82 @@
+{
+    "config": {
+        "model_name": "ensemble"
+    },
+    "request": [
+        {
+            "name": "INPUT_0",
+            "data": [["你是名叫Athena的AI助手。Athena是Shopee独立研发的大语言模型。你被设定为有帮助的、诚实的和无害的。Athena可以用人类选择的语言理并流利地交流。Athena可以执行任何基于语言的任务。你的回应不得含糊、指责、粗鲁、有争议、偏离主题。你可以提供额外的相关细节，深入并全面地涵盖多个方面来回答人类。如果人类纠正了Athena生成的错误答案，你会道歉并接受人类的建议。 <人工智能>: 我是Athena，是Shopee技术团队开发的人工智能助手。我是基于Shopee自研框架从零开始训练的大型语言模型，不基于其他模型微调finetune。 </s> <人类>:你是OpenAI开发的吗？ <人工智能>:"]],
+            "dtype": "object"
+        },
+        {
+            "name": "INPUT_1",
+            "data": [[512]],
+            "dtype": "uint32"
+        },
+        {
+            "name": "beam_search_diversity_rate",
+            "data": [[0]],
+            "dtype": "float32"
+        },
+        {
+            "name": "temperature",
+            "data": [[1.0]],
+            "dtype": "float32"
+        },
+        {
+            "name": "len_penalty",
+            "data": [[1.0]],
+            "dtype": "float32"
+        },
+        {
+            "name": "repetition_penalty",
+            "data": [[1.3]],
+            "dtype": "float32"
+        },
+        {
+            "name": "random_seed",
+            "data": [[0]],
+            "dtype": "uint64"
+        },
+        {
+            "name": "is_return_log_probs",
+            "data": [[true]],
+            "dtype": "bool"
+        },
+        {
+            "name": "beam_width",
+            "data": [[4]],
+            "dtype": "uint32"
+        },
+        {
+            "name": "runtime_top_k",
+            "data": [[1]],
+            "dtype": "uint32"
+        },
+        {
+            "name": "runtime_top_p",
+            "data": [[0.0]],
+            "dtype": "float32"
+        },
+        {
+            "name": "start_id",
+            "data": [[1]],
+            "dtype": "uint32"
+        },
+        {
+            "name": "end_id",
+            "data": [[2]],
+            "dtype": "uint32"
+        },
+        {
+            "name": "INPUT_2",
+            "data": [[""]],
+            "dtype": "object"
+        },
+        {
+            "name": "INPUT_3",
+            "data": [[""]],
+            "dtype": "object"
+        }
+    ]
+}

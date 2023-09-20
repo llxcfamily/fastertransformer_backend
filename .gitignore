@@ -1,0 +1,15 @@
+__pycache__
+models
+FasterTransformer/build
+/build
+/.vscode
+*.so
+*.run
+.clangd
+compile_commands.json
+*.pyc
+*.bin
+.cache
+__pycache__
+/cmake-build-*
+/.idea

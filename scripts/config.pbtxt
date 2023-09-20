@@ -1,0 +1,68 @@
+model_warmup [{
+    name : "regular sample"
+    batch_size: 1
+    inputs {
+        key: "0"
+        value: {
+            data_type: TYPE_FP32
+            dims: 16
+            zero_data: true
+        }
+    }
+    inputs {
+        key: "1"
+        value: {
+            data_type: TYPE_FP32
+            dims: 16
+            random_data: true
+        }
+    }
+}]
+model_warmup [{
+    name : "regular sample"
+    batch_size: 1
+    inputs {
+        key: "0"
+        value: {
+            data_type: TYPE_FP32
+            dims: 16
+            zero_data: true
+        }
+    }
+    inputs {
+        key: "1"
+        value: {
+            data_type: TYPE_FP32
+            dims: 16
+            random_data: true
+        }
+    }
+}]
+model_warmup [{
+    name : "string statefull"
+    batch_size: 8
+    inputs {
+        key: ""
+        value: {
+            data_type: TYPE_STRING
+            dims: 1
+            input_data_file: "raw_string_data"
+        }
+    }
+    inputs {
+        key: ""
+        value: {
+            data_type: TYPE_INT32
+            dims: 1
+            zero_data: true
+        }
+    }
+    inputs {
+        key: ""
+        value: {
+            data_type: TYPE_INT32
+            dims: 1
+            zero_data: true
+        }
+    }
+}]
